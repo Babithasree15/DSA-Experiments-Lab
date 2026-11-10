@@ -34,12 +34,9 @@ void dequeue()
         printf("Queue is Empty!\n");
         return;
     }
-    // Gets executed when queue is not empty
     struct Node *front = rear->next;
     printf("Token %d served\n", front->foodToken);
 
-    // If there is only one node in the queue and that is dequeued,
-    //  then rear should be set to NULL (Indicates empty queue)
     if (front == rear)
         rear = NULL;
     else
