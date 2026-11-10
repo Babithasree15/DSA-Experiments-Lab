@@ -1,5 +1,3 @@
-/* Experiment 2: Dynamic Student Record System using Structure Pointers
-   Case Study: Vidya College SIS - Admission desk creates student records dynamically */
 #include <stdio.h>
 #include <stdlib.h>
 
