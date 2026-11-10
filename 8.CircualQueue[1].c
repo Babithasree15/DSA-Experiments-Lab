@@ -7,13 +7,12 @@ struct Node
     struct Node *next;
 };
 
-struct Node *rear = NULL; /* rear points to last node; rear->next is front */
+struct Node *rear = NULL; 
 
 void enqueue(int token)
 {
     struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
     newNode->foodToken = token;
-    // Empty queue case
     if (rear == NULL)
     {
         newNode->next = newNode;
@@ -44,7 +43,7 @@ void dequeue()
     if (front == rear)
         rear = NULL;
     else
-        rear->next = front->next; // Link the rear to the next node of front
+        rear->next = front->next; 
     free(front);
 }
 
